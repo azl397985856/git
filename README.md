@@ -194,6 +194,8 @@ chore: 增加注释
 可以通过git stash将工作区的内容存储起来。然后切换新分支完成bug修复，再次切换到未完成的分支，执行
 git stash pop 将未完成的工作还原到工作区。
 
+更多场景及解决方案可以[issue](https://github.com/azl397985856/git/issues) 或者 [pr](https://github.com/azl397985856/git/pull-request) 给我。
+
 ## 参考资料
 [git-flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
 
