@@ -3,9 +3,59 @@
 ## 概念
 
 - git是一个分布式版本控制系统
+
 说它是分布式，其实是相对于传统的集中式版本控制系统如SVN来说的。
 git有本地仓库和远程仓库的概念。因此就涉及到了本地仓库和远程仓库的同步问题。
+
 - git是面向对象，本质上是内容寻址系统
+.git目录的下有一个文件夹objects。存储了git库中的对象，对象是git中非常重要的概念。
+
+```bash
+
+git会对所有内容做hash-obejct生成40位的校验和，然后前两位作为文件夹的名字。如下：
+git:(daily/0.1.0) ✗ ls -1 .git/objects
+00
+01
+02
+03
+04
+05
+06
+
+后38位作为文件名：
+git:(daily/0.1.0) ✗ ls -1 .git/objects/00
+04a9fe24ed3e25e7a9d0cd87178bc4aed32891
+1ab1dbd031b06b88acf247c2734a6ce5f2c2f2
+384c5dbd2a126e09f27aa3f818516830b38933
+604011e29363914659a5e436564f0c20b95ff4
+80c38f950f9199744b82328f29ceb8ba5e7745
+98a6385296048f8b3e5bf923374266f5df3d36
+b876a0e0adfa03a51862b0cbc7e04015628257
+bf64fbe6d61edbcc43484cd1feebf48ffbc668
+ff7645be03614527ec8c15f943e6d77ed56749
+
+可以通过如下命名查看具体的文件内容：
+git:(daily/0.1.0) ✗ git cat-file -p 001ab1dbd031b06b88acf247c2734a6ce5f2c2f1
+100644 blob 4b02ba48a1dc2be18735b763d7e17c8aa9640ac5    index.js
+100644 blob 7c49e625833ea4009c035ac8a568b53b0b68a3da    a.less
+100644 blob b1c19145a728e038bfb9b94525d48f6df70fb82f    b.vue
+
+```
+
+git就是根据object建立一种树形结构。将文件和通过hash的方式关联起来。
+
+当你推送远程分支的时候会看到类似下面的信息：
+
+```bash
+git:(daily/0.1.0) ✗ git gc
+Counting objects: 843, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (764/764), done.
+Writing objects: 100% (843/843), done.
+Total 843 (delta 453), reused 0 (delta 0)
+```
+你也可以像我一样用git gc手动触发。
+
 - 暂存区， 工作区，远程仓库的概念和区别
 
 比如add，commit，checkout [file]， reset究竟是在三者中怎么变化的。
