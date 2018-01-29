@@ -103,6 +103,12 @@ refs/
  
  HEAD是一个特殊的指针，它是指针的指针。它用来标记当前的提交。当你使用git checkout branch，
  HEAD指针就会发生移动。 当你新建一个分支的时候其实仅仅是改变了HEAD的指向，这也是git分支比较轻量的原因。
+ 通过如下命令可以查看当前HEAD位置：
+ 
+ ```bash
+ git:(develop) cat HEAD
+ref: refs/heads/develop
+```
  
  hooks是钩子。用来在git操作前后进行一些操作。 比如下面讲的husky插件就是基于这个原理实现的。
  
@@ -115,6 +121,9 @@ refs/
  ```bash
  git:(daily/0.1.0) ✗ ls .git/refs
 heads   remotes tags
+
+git:(master) ✗ cat .git/refs/remotes/origin/HEAD
+ref: refs/remotes/origin/master
 ```
 ## git flow
 你可以定义一个完全适合你自己项目的工作流程，或者使用一个别人定义好的。
