@@ -169,7 +169,7 @@ chore: 增加注释
 - [husky](https://github.com/typicode/husky)
 - [git blame](https://github.com/Sertion/vscode-gitblame) or [git lens](https://github.com/eamodio/vscode-gitlens)
  
-## git 常见问题
+## 常见场景及解决方案
 
 > 需要理解上面的基本概念
 
