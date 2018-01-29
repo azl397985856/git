@@ -197,8 +197,10 @@ git stash pop 将未完成的工作还原到工作区。
 更多场景及解决方案可以[issue](https://github.com/azl397985856/git/issues) 或者 [pr](https://github.com/azl397985856/git/pulls) 给我。
 
 ## 参考资料
-[git-flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
+[git-flow](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow)
 
 [Git-Internals-Git-Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 
 [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
+
+> 上述参考资料中git-flow 和 Git-Internals-Git-Objects 有对应中文版，可以直接修改url中的en为cn查看中文内容。
