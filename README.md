@@ -70,7 +70,7 @@ chore: 增加注释
 - [commitzen](https://github.com/commitizen/cz-cli)
 - [coventional-changelog](https://github.com/commitizen/cz-conventional-changelog)
 - [husky](https://github.com/typicode/husky)
-- git blame(waderyan.gitblame) or git lens(eamodio.gitlens)
+- [git blame](https://github.com/Sertion/vscode-gitblame) or [git lens](https://github.com/eamodio/vscode-gitlens)
  
 ## git 常见问题
 
