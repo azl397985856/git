@@ -8,11 +8,13 @@
 git有本地仓库和远程仓库的概念。因此就涉及到了本地仓库和远程仓库的同步问题。
 
 - git是面向对象，本质上是内容寻址系统
+
 .git目录的下有一个文件夹objects。存储了git库中的对象，对象是git中非常重要的概念。
 
 ```bash
 
 git会对所有内容做hash-obejct生成40位的校验和，然后前两位作为文件夹的名字。如下：
+
 git:(daily/0.1.0) ✗ ls -1 .git/objects
 00
 01
@@ -23,6 +25,7 @@ git:(daily/0.1.0) ✗ ls -1 .git/objects
 06
 
 后38位作为文件名：
+
 git:(daily/0.1.0) ✗ ls -1 .git/objects/00
 04a9fe24ed3e25e7a9d0cd87178bc4aed32891
 1ab1dbd031b06b88acf247c2734a6ce5f2c2f2
@@ -35,6 +38,7 @@ bf64fbe6d61edbcc43484cd1feebf48ffbc668
 ff7645be03614527ec8c15f943e6d77ed56749
 
 可以通过如下命名查看具体的文件内容：
+
 git:(daily/0.1.0) ✗ git cat-file -p 001ab1dbd031b06b88acf247c2734a6ce5f2c2f1
 100644 blob 4b02ba48a1dc2be18735b763d7e17c8aa9640ac5    index.js
 100644 blob 7c49e625833ea4009c035ac8a568b53b0b68a3da    a.less
