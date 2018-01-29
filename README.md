@@ -137,6 +137,8 @@ ref: refs/remotes/origin/master
 合并分支，用于合并hotfix和feature
 ### release
  合并分支，用于发布某一个版本，通常采用semver
+ 
+ 更详细的git flow的使用方法见文末的参考文献。
 ## git commit msg
 好的提交不仅方便查看，由于其一致的数据格式，还可以用于其他处理的数据源。
 如根据commit msg，生成changelog。
@@ -157,6 +159,8 @@ chore: 增加注释
 ```
 详细介绍可以参考文末的参考资料。
 ## 插件
+好的工具不仅可以提高效率，减少失误，配合起来使用更能达到意想不到的效果。
+
 
 - [git](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugin:git)
 - [git-flow](https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git-flow)
