@@ -186,8 +186,12 @@ chore: 增加注释
 而不是创建新的提交，这样做会有风险，因此推送到远程的时候需要强制操作。 git push --force
 
 > 如果git reset 之后想要回到reset之前的版本。可以通过git reflog查看，然后再次通过git reset commit-id回滚。
-3. 多人协作的回退版本，如何保证不影响其他成员？
-4. 我在开发一个功能，此时线上有个bug。但是功能写了一半，不能提交，怎么办？
+如果把git commit 看成是游戏存档的话， 那么git reflog就是存档记录
+
+3. 我在开发一个功能，此时线上有个bug。但是功能写了一半，不能提交，怎么办？
+
+可以通过git stash将工作区的内容存储起来。然后切换新分支完成bug修复，再次切换到未完成的分支，执行
+git stash pop 将未完成的工作还原到工作区。
 
 ## 参考资料
 [git-flow](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/git-flow)
