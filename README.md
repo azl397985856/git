@@ -174,7 +174,18 @@ chore: 增加注释
 > 需要理解上面的基本概念
 
 1. 如何回退某个提交的内容？
+如果需要回滚某个提交，可以提交一个新的提交，将那次提交的内容给反向抵消掉。
+这正是git revert commit-id 所做的。
+
 2. 如何回退到某次提交？
+
+理论上我们可以通过git revert HEAD ， git revert HEAD^1 ...
+但是这样比较麻烦，你可以通过git reset commit-id完成。
+
+这样操作和git revert是有区别的。 它直接将指针指向commit-id，强制改变了提交历史。
+而不是创建新的提交，这样做会有风险，因此推送到远程的时候需要强制操作。 git push --force
+
+> 如果git reset 之后想要回到reset之前的版本。可以通过git reflog查看，然后再次通过git reset commit-id回滚。
 3. 多人协作的回退版本，如何保证不影响其他成员？
 4. 我在开发一个功能，此时线上有个bug。但是功能写了一半，不能提交，怎么办？
 
