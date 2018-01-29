@@ -6,7 +6,7 @@
 - git是面向对象，本质上是内容寻址系统
 - 暂存区， 工作区，远程仓库的概念和区别
 
-比如add，commit，checkout [file] reset究竟是在三者中怎么变化的。
+比如add，commit，checkout [file]， reset究竟是在三者中怎么变化的。
 
 - HEAD，指针
 
