@@ -140,7 +140,7 @@ git flow其实就是分支管理模型。对于大型项目遵循一定的规则
 ### feature
 工作分支，用于开发新的功能
 ### develop
-合并分支，用于合并hotfix和feature
+合并分支，用于合并hotfix和feature。 develop分支恐怕是我们用的最多的分支。
 ### release
  合并分支，用于发布某一个版本，通常采用semver
  
