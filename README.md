@@ -140,7 +140,7 @@ git flow其实就是分支管理模型。对于大型项目遵循一定的规则
 工作分支，用于开发新的功能
 ### develop
 合并分支，用于合并hotfix和feature。 develop分支恐怕是我们用的最多的分支。
-develop汇总了所有的功能分支代码。你需要选择性将分支合并到不同的release分支。
+develop汇总了所有的功能分支代码。当develop代码达到稳定状态（测试完成），将其合并到release分支。
 
 > develop其实包含了所有的功能分支，包括未被测试的分支。
 当分支被测试完毕才可以将其合并到release。所有的分支只有master和develop是长期分支。
