@@ -131,7 +131,7 @@ git flow其实就是分支管理模型。对于大型项目遵循一定的规则
 
 典型的git flow流程大概是这样的：
 
-![git-flow](https://github.com/azl397985856/git/blob/master/illustrations/git-flow.png  =500x700)
+![git-flow](https://github.com/azl397985856/git/blob/master/illustrations/git-flow.png){:height="500px" width="700px"}
 
 目前比较流行的git flow包含如下几种分支类型。
 ### hotfix
