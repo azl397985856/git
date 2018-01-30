@@ -153,6 +153,11 @@ develop汇总了所有的功能分支代码。当develop代码达到稳定状态
 git flow是被应用广泛的一种分支管理模型，受到很多开发者的追捧。
 但是其复杂性确并不被所有开发者买单，google就没有采用git flow的开发模式。
 这有一篇文章，讲的就是git flow的反模式。[anti git-flow](http://endoflineblog.com/gitflow-considered-harmful)
+
+如果合并到develop中的一个分支没有通过测试，无法发布，其他分支需要发布怎么办？
+
+这就需要checkout develop，然后revert指定feature分支合并的commit id。这也就是为什么
+git flow 合并分支需要非快速合并的原因（--no-ff）
  
  更详细的git flow的使用方法见文末的参考文献。
 ## git commit msg
