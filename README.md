@@ -78,6 +78,11 @@ Total 843 (delta 453), reused 0 (delta 0)
 
 比如add，commit，checkout [file]， reset究竟是在三者中怎么变化的。
 
+暂存区，工作区，远程仓库的关系可以用一张图来表示。为了方便，直接拿廖雪峰的图：
+
+[workspace-stage](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0)
+
+git add 会添加文件到暂存区，commit是将暂存区的文件提交到版本库。 然后push才最终将代码推送到远程对应的分支。
 ### HEAD，指针
 
 当你新建一个git项目的时候，git会在根目录新建一个git目录.
