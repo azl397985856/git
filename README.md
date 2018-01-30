@@ -126,9 +126,8 @@ git:(master) ✗ cat .git/refs/remotes/origin/HEAD
 ref: refs/remotes/origin/master
 ```
 ## git flow
-你可以定义一个完全适合你自己项目的工作流程，或者使用一个别人定义好的。
-
 git flow其实就是分支管理模型。对于大型项目遵循一定的规则是很有必要的，
+你可以定义一个完全适合你自己项目的工作流程，或者使用一个别人定义好的。
 
 典型的git flow流程大概是这样的：
 
