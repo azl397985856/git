@@ -215,6 +215,8 @@ git stash pop 将未完成的工作还原到工作区。
 ## 参考资料
 [git-flow](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/git-flow)
 
+[a-successful-git-branching-model](http://nvie.com/posts/a-successful-git-branching-model/)
+
 [Git-Internals-Git-Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 
 [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
