@@ -86,7 +86,7 @@ git add 会添加文件到暂存区，commit是将暂存区的文件提交到版
 
 另外git还有一个文件状态生命周期的概念，同样也可以用一张图来表示。我直接从git-scm拿的图:
 
-![life-cycle](https://cdn.liaoxuefeng.com/cdn/files/attachments/001384907702917346729e9afbf4127b6dfbae9207af016000/0)
+![life-cycle](https://github.com/azl397985856/git/blob/master/illustrations/lifecycle.png)
 ### HEAD，指针
 
 当你新建一个git项目的时候，git会在根目录新建一个git目录.
