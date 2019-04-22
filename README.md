@@ -242,5 +242,6 @@ git stash pop 将未完成的工作还原到工作区。
 [Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 
 [git-recipes](https://github.com/geeeeeeeeek/git-recipes)
+[git奇淫技巧](https://github.com/521xueweihan/git-tips)
 
 > 上述参考资料中git-flow 和 Git-Internals-Git-Objects 有对应中文版，可以直接修改url中的en为cn查看中文内容。
